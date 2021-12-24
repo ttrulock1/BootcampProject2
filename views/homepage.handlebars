@@ -1,0 +1,9 @@
+<nav>
+    <a href="/login">login</a>
+    <a href="/signup">sign up</a>
+    <a href="/media/upload">upload</a>
+</nav>
+
+{{#each galleries as |gallery|}}
+{{> gallery-details}}
+{{/each}}

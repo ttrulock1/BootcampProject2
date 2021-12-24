@@ -1,0 +1,11 @@
+    {{#if loggedIn}}
+    <button id="logout">logout</button>
+            <button id="new-gallery-button"
+                onclick="location.href='/new-gallery'">+ New Gallery</button>
+
+{{#each galleries as |gallery|}}
+{{> gallery-details}}
+{{/each}}
+
+    {{/if}}
+<script src="/js/logout.js"></script>
